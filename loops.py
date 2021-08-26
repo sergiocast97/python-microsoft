@@ -5,6 +5,11 @@ print('Names: ')
 for name in people :
     print(' - ' + name)
 
+# For in Loop
+print('\nNames in range: ')
+for i in range(0, 2):
+    print( '-' + people[i])
+
 # While loop
 
 print('\nNames: ')

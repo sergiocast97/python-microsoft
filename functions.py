@@ -5,6 +5,14 @@ def get_initial(name):
     initial = name[0:1].upper()
     return initial
 
+# Defaulting force uppercase 
+def get_initial(name, force_uppercase=True):
+    if force_uppercase:
+        initial = name[0:1].upper()
+    else:
+        initial = name[0:1]
+    return initial
+
 # Calling the function
 
 name = input('Enter your name: ')
@@ -15,9 +23,14 @@ surname_initial = get_initial(surname)
 
 print('Your initials are ' + name_initial + surname_initial)
 
+# Specifying parameters
+test_name = 'Test'
+initial = get_initial(
+    force_uppercase=True,
+    name=test_name
+)
 
 # Date function
-
 
 from datetime import datetime
 

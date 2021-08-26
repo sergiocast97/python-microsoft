@@ -1,0 +1,24 @@
+# Install Virtual Environment
+pip install virtualenv
+
+# Windows System
+python -m venv <folder_name>
+
+# OSX/Linux (bash)
+virtualenv <folder_name>
+python3 -m virtualenv <file_name>
+
+
+# Using the VENV
+
+# Windows (CMD)
+<folder_name>\Script\Activate.bat (.ps1)
+
+# Bash Shell
+. ./<folder_name>/Scripts/activate
+
+# OSX/Linux (Bash)
+<folder_name>/bin/activate
+
+
+# Then just install as usual
